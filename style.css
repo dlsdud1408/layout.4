@@ -5,7 +5,7 @@
 html, body, div, spa n, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td{margin:0;padding:0;}
 a {color: inherit; text-decoration: inherit;}
 li {list-style: none;}
-img {vertical-align: middle;}
+img {vertical-align: middle; }
 
 /*layout*/
 /*항상  wrap에는 overflow: hidden 주기*/
@@ -14,5 +14,31 @@ body {font-family: 'Noto Sans KR', sans-serif;
 .wrap{width: 100%; margin: 0 auto; overflow: hidden;}    
 .inner{width: 1100px; margin: 0 auto;}
 
-.visual {width: 100%; height: 950px; background: url(img/visual.png) no-repeat center/cover;}
-.visual .inner .maintitle
+.visual {width: 100%; height: 950px; background: url(img/visual.png) no-repeat center/cover; border-top: 1px solid #f3c565; color: #fff;}
+.visual .inner .maintitle { text-transform: uppercase; line-height: 1.2; margin-top: 100px;}
+.visual .inner .maintitle p.top{font-size: 43px; letter-spacing: 8px; margin-bottom: 50px;}
+.visual .inner .maintitle p.top span{color: #000;}
+.visual .inner .maintitle h1{font-size: 200px; letter-spacing: 105px; margin-bottom: 50px; color: #fff;}
+.visual .inner .maintitle p.bottom{font-size: 20px; color: #000;}
+.visual .inner .textbox {border: 1px solid rgb(255, 255, 255, 0.5);border-radius: 20px; padding: 40px 50px 50px; box-sizing: border-box; margin-top: 50px;}
+.visual .inner .textbox .subtitle {font-size: 30px; text-transform: uppercase; letter-spacing: 8px; margin-bottom: 10px; position:relative; display: inline-block; padding-right: 60px;}
+.visual .inner .textbox .subtitle:after{content:''; width:50px; height:6px; background: #fff; position:absolute; top:50%; margin-top: -3px; right: 0;}
+
+.textbox .title_s{text-transform: uppercase; font-size: 30px; letter-spacing: 8px; margin: bottom 10px; position: relative; display: inline-block; padding-right: 60px;}
+.textbox .title_s:after{content:''; width: 50px; height: 6px; background: #000; position:absolute; right:0; top: 50%; margin-top: -3px; }
+
+.textbox .title_num{display:block; float: right; font-style: 32px; font-weight: 900;letter-spacing: -2px; position: relative;} 
+.textbox .title_num:after{content:''; width: 40px; height: 4px; background: #000; position:absolute; right:0; bottom:0;}
+
+.textbox .title_btn{display: inline-block; font-weight: bold; color: #fff; background: #000; padding: 5px 30px; font-size: 20px; letter-spacing: 2px; margin-bottom: 40px;}
+
+
+section.living {padding: 100px 0;}
+section.living .textbox p{margin: 20px 0 30px;}
+section.living .list{overflow:hidden;}
+section.living .list li{float: left; margin-bottom: 20px;}
+section.living .list li:nth-child(2){float: right;}
+section.living .list li a{display: block; overflow: hidden;}
+section.living .list li a img{width: 100%; transition: all 0.5s;}
+section.living .list li a:hover img, section.living .list li a:focus img{transform:scale(1.2); transition:all 1s;}
+
