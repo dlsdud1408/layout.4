@@ -41,4 +41,5 @@ section.living .list li:nth-child(2){float: right;}
 section.living .list li a{display: block; overflow: hidden;}
 section.living .list li a img{width: 100%; transition: all 0.5s;}
 section.living .list li a:hover img, section.living .list li a:focus img{transform:scale(1.2); transition:all 1s;}
+ss
 
